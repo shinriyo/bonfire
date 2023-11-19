@@ -24,6 +24,7 @@ class PersonSpritesheet {
   final String path;
 
   PersonSpritesheet({this.path = 'human.png'});
+  final textureSize = Vector2.all(32);
 
   SimpleDirectionAnimation simpleAnimation() {
     return SimpleDirectionAnimation(
@@ -68,7 +69,7 @@ class PersonSpritesheet {
       SpriteAnimationData.sequenced(
         amount: 2,
         stepTime: 0.2,
-        textureSize: Vector2.all(32),
+        textureSize: textureSize,
       ),
     );
   }
@@ -79,8 +80,8 @@ class PersonSpritesheet {
       SpriteAnimationData.sequenced(
         amount: 2,
         stepTime: 0.2,
-        textureSize: Vector2.all(32),
-        texturePosition: Vector2(0, 32 * 2),
+        textureSize: textureSize,
+        texturePosition: Vector2(0, textureSize.y * 2),
       ),
     );
   }
@@ -91,8 +92,8 @@ class PersonSpritesheet {
       SpriteAnimationData.sequenced(
         amount: 2,
         stepTime: 0.2,
-        textureSize: Vector2.all(32),
-        texturePosition: Vector2(0, 32 * 4),
+        textureSize: textureSize,
+        texturePosition: Vector2(0, textureSize.y * 4),
       ),
     );
   }
@@ -103,8 +104,8 @@ class PersonSpritesheet {
       SpriteAnimationData.sequenced(
         amount: 2,
         stepTime: 0.2,
-        textureSize: Vector2.all(32),
-        texturePosition: Vector2(0, 32 * 1),
+        textureSize: textureSize,
+        texturePosition: Vector2(0, textureSize.y * 1),
       ),
     );
   }
@@ -115,8 +116,8 @@ class PersonSpritesheet {
       SpriteAnimationData.sequenced(
         amount: 2,
         stepTime: 0.2,
-        textureSize: Vector2.all(32),
-        texturePosition: Vector2(0, 32 * 3),
+        textureSize: textureSize,
+        texturePosition: Vector2(0, textureSize.y * 3),
       ),
     );
   }
@@ -127,8 +128,8 @@ class PersonSpritesheet {
       SpriteAnimationData.sequenced(
         amount: 2,
         stepTime: 0.2,
-        textureSize: Vector2.all(32),
-        texturePosition: Vector2(0, 32 * 5),
+        textureSize: textureSize,
+        texturePosition: Vector2(0, textureSize.y * 5),
       ),
     );
   }
@@ -139,8 +140,8 @@ class PersonSpritesheet {
       SpriteAnimationData.sequenced(
         amount: 2,
         stepTime: 0.2,
-        textureSize: Vector2.all(32),
-        texturePosition: Vector2(0, 32 * 7),
+        textureSize: textureSize,
+        texturePosition: Vector2(0, textureSize.y * 7),
       ),
     );
   }
@@ -151,8 +152,8 @@ class PersonSpritesheet {
       SpriteAnimationData.sequenced(
         amount: 2,
         stepTime: 0.2,
-        textureSize: Vector2.all(32),
-        texturePosition: Vector2(64, 32 * 2),
+        textureSize: textureSize,
+        texturePosition: Vector2(64, textureSize.y * 2),
       ),
     );
   }
@@ -163,7 +164,7 @@ class PersonSpritesheet {
       SpriteAnimationData.sequenced(
         amount: 2,
         stepTime: 0.2,
-        textureSize: Vector2.all(32),
+        textureSize: textureSize,
         texturePosition: Vector2(64, 0),
       ),
     );
@@ -175,8 +176,8 @@ class PersonSpritesheet {
       SpriteAnimationData.sequenced(
         amount: 2,
         stepTime: 0.2,
-        textureSize: Vector2.all(32),
-        texturePosition: Vector2(64, 32 * 4),
+        textureSize: textureSize,
+        texturePosition: Vector2(64, textureSize.y * 4),
       ),
     );
   }
@@ -187,8 +188,8 @@ class PersonSpritesheet {
       SpriteAnimationData.sequenced(
         amount: 2,
         stepTime: 0.2,
-        textureSize: Vector2.all(32),
-        texturePosition: Vector2(64, 32 * 1),
+        textureSize: textureSize,
+        texturePosition: Vector2(64, textureSize.y * 1),
       ),
     );
   }
@@ -199,8 +200,8 @@ class PersonSpritesheet {
       SpriteAnimationData.sequenced(
         amount: 2,
         stepTime: 0.2,
-        textureSize: Vector2.all(32),
-        texturePosition: Vector2(64, 32 * 3),
+        textureSize: textureSize,
+        texturePosition: Vector2(64, textureSize.y * 3),
       ),
     );
   }
@@ -211,8 +212,8 @@ class PersonSpritesheet {
       SpriteAnimationData.sequenced(
         amount: 2,
         stepTime: 0.2,
-        textureSize: Vector2.all(32),
-        texturePosition: Vector2(64, 32 * 5),
+        textureSize: textureSize,
+        texturePosition: Vector2(64, textureSize.y * 5),
       ),
     );
   }
@@ -223,8 +224,8 @@ class PersonSpritesheet {
       SpriteAnimationData.sequenced(
         amount: 2,
         stepTime: 0.2,
-        textureSize: Vector2.all(32),
-        texturePosition: Vector2(64, 32 * 7),
+        textureSize: textureSize,
+        texturePosition: Vector2(64, textureSize.y * 7),
       ),
     );
   }
@@ -235,8 +236,8 @@ class PersonSpritesheet {
       SpriteAnimationData.sequenced(
         amount: 4,
         stepTime: 0.2,
-        textureSize: Vector2.all(32),
-        texturePosition: Vector2(32 * 5, 0),
+        textureSize: textureSize,
+        texturePosition: Vector2(textureSize.x * 5, 0),
       ),
     );
   }
@@ -247,8 +248,8 @@ class PersonSpritesheet {
       SpriteAnimationData.sequenced(
         amount: 4,
         stepTime: 0.2,
-        textureSize: Vector2.all(32),
-        texturePosition: Vector2(32 * 5, 32 * 4),
+        textureSize: textureSize,
+        texturePosition: Vector2(textureSize.x * 5, textureSize.y * 4),
       ),
     );
   }
@@ -259,8 +260,8 @@ class PersonSpritesheet {
       SpriteAnimationData.sequenced(
         amount: 4,
         stepTime: 0.2,
-        textureSize: Vector2.all(32),
-        texturePosition: Vector2(32 * 5, 32 * 6),
+        textureSize: textureSize,
+        texturePosition: Vector2(textureSize.x * 5, textureSize.y * 6),
       ),
     );
   }
@@ -271,8 +272,8 @@ class PersonSpritesheet {
       SpriteAnimationData.sequenced(
         amount: 4,
         stepTime: 0.2,
-        textureSize: Vector2.all(32),
-        texturePosition: Vector2(32 * 5, 32 * 2),
+        textureSize: textureSize,
+        texturePosition: Vector2(textureSize.x * 5, textureSize.y * 2),
       ),
     );
   }
@@ -283,8 +284,8 @@ class PersonSpritesheet {
       SpriteAnimationData.sequenced(
         amount: 4,
         stepTime: 0.2,
-        textureSize: Vector2.all(32),
-        texturePosition: Vector2(32 * 5, 32),
+        textureSize: textureSize,
+        texturePosition: Vector2(textureSize.x * 5, 32),
       ),
     );
   }
@@ -295,8 +296,8 @@ class PersonSpritesheet {
       SpriteAnimationData.sequenced(
         amount: 4,
         stepTime: 0.2,
-        textureSize: Vector2.all(32),
-        texturePosition: Vector2(32 * 5, 32 * 3),
+        textureSize: textureSize,
+        texturePosition: Vector2(textureSize.x * 5, textureSize.y * 3),
       ),
     );
   }
@@ -307,8 +308,8 @@ class PersonSpritesheet {
       SpriteAnimationData.sequenced(
         amount: 4,
         stepTime: 0.2,
-        textureSize: Vector2.all(32),
-        texturePosition: Vector2(32 * 5, 32 * 5),
+        textureSize: textureSize,
+        texturePosition: Vector2(textureSize.x * 5, textureSize.y * 5),
       ),
     );
   }
@@ -319,8 +320,8 @@ class PersonSpritesheet {
       SpriteAnimationData.sequenced(
         amount: 4,
         stepTime: 0.2,
-        textureSize: Vector2.all(32),
-        texturePosition: Vector2(32 * 5, 32 * 7),
+        textureSize: textureSize,
+        texturePosition: Vector2(textureSize.x * 5, textureSize.y * 7),
       ),
     );
   }
@@ -331,8 +332,8 @@ class PersonSpritesheet {
       SpriteAnimationData.sequenced(
         amount: 4,
         stepTime: 0.2,
-        textureSize: Vector2.all(32),
-        texturePosition: Vector2(32 * 9, 0),
+        textureSize: textureSize,
+        texturePosition: Vector2(textureSize.x * 9, 0),
       ),
     );
   }
@@ -343,8 +344,8 @@ class PersonSpritesheet {
       SpriteAnimationData.sequenced(
         amount: 4,
         stepTime: 0.2,
-        textureSize: Vector2.all(32),
-        texturePosition: Vector2(32 * 9, 32 * 4),
+        textureSize: textureSize,
+        texturePosition: Vector2(textureSize.x * 9, textureSize.y * 4),
       ),
     );
   }
@@ -355,8 +356,8 @@ class PersonSpritesheet {
       SpriteAnimationData.sequenced(
         amount: 4,
         stepTime: 0.2,
-        textureSize: Vector2.all(32),
-        texturePosition: Vector2(32 * 9, 32 * 6),
+        textureSize: textureSize,
+        texturePosition: Vector2(textureSize.x * 9, textureSize.y * 6),
       ),
     );
   }
@@ -367,8 +368,8 @@ class PersonSpritesheet {
       SpriteAnimationData.sequenced(
         amount: 4,
         stepTime: 0.2,
-        textureSize: Vector2.all(32),
-        texturePosition: Vector2(32 * 9, 32 * 2),
+        textureSize: textureSize,
+        texturePosition: Vector2(textureSize.x * 9, textureSize.y * 2),
       ),
     );
   }
@@ -379,8 +380,8 @@ class PersonSpritesheet {
       SpriteAnimationData.sequenced(
         amount: 4,
         stepTime: 0.2,
-        textureSize: Vector2.all(32),
-        texturePosition: Vector2(32 * 9, 32),
+        textureSize: textureSize,
+        texturePosition: Vector2(textureSize.x * 9, 32),
       ),
     );
   }
@@ -391,8 +392,8 @@ class PersonSpritesheet {
       SpriteAnimationData.sequenced(
         amount: 4,
         stepTime: 0.2,
-        textureSize: Vector2.all(32),
-        texturePosition: Vector2(32 * 9, 32 * 3),
+        textureSize: textureSize,
+        texturePosition: Vector2(textureSize.x * 9, textureSize.y * 3),
       ),
     );
   }
@@ -403,8 +404,8 @@ class PersonSpritesheet {
       SpriteAnimationData.sequenced(
         amount: 4,
         stepTime: 0.2,
-        textureSize: Vector2.all(32),
-        texturePosition: Vector2(32 * 9, 32 * 5),
+        textureSize: textureSize,
+        texturePosition: Vector2(textureSize.x * 9, textureSize.y * 5),
       ),
     );
   }
@@ -415,8 +416,8 @@ class PersonSpritesheet {
       SpriteAnimationData.sequenced(
         amount: 4,
         stepTime: 0.2,
-        textureSize: Vector2.all(32),
-        texturePosition: Vector2(32 * 9, 32 * 7),
+        textureSize: textureSize,
+        texturePosition: Vector2(textureSize.x * 9, textureSize.y * 7),
       ),
     );
   }
